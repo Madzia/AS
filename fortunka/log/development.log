@@ -1,0 +1,89 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (147.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (18.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (92.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateFortunes (20121112100650)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (84.7ms)[0m  [1mCREATE TABLE "fortunes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "quotation" text, "source" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121112100650')
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (30.1ms)[0m  select sqlite_version(*)
+  [1m[36m (47.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("fortunes")
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (239.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (142.6ms)[0m  [1mINSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 12 Nov 2012 10:13:03 UTC +00:00], ["quotation", "I hear and I forget. I see and I remember. I do and I understand."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:13:03 UTC +00:00]]
+  [1m[35m (43.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.3ms)[0m  INSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 12 Nov 2012 10:13:03 UTC +00:00], ["quotation", "Everything has its beauty but not everyone sees it."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:13:03 UTC +00:00]]
+  [1m[36m (80.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 12 Nov 2012 10:13:03 UTC +00:00], ["quotation", "It does not matter how slowly you go so long as you do not stop."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:13:03 UTC +00:00]]
+  [1m[35m (46.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (42.7ms)[0m  INSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 12 Nov 2012 10:13:04 UTC +00:00], ["quotation", "Study the past if you would define the future."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:13:04 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (82.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (603.7ms)[0m  [1mINSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 12 Nov 2012 10:14:21 UTC +00:00], ["quotation", "I hear and I forget. I see and I remember. I do and I understand."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:14:21 UTC +00:00]]
+  [1m[35m (165.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (51.9ms)[0m  INSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 12 Nov 2012 10:14:22 UTC +00:00], ["quotation", "Everything has its beauty but not everyone sees it."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:14:22 UTC +00:00]]
+  [1m[36m (120.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (121.4ms)[0m  [1mINSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 12 Nov 2012 10:14:22 UTC +00:00], ["quotation", "It does not matter how slowly you go so long as you do not stop."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:14:22 UTC +00:00]]
+  [1m[35m (158.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (124.8ms)[0m  INSERT INTO "fortunes" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 12 Nov 2012 10:14:22 UTC +00:00], ["quotation", "Study the past if you would define the future."], ["source", nil], ["updated_at", Mon, 12 Nov 2012 10:14:22 UTC +00:00]]
+  [1m[36m (142.1ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 153.19.5.40 at 2012-11-12 11:16:35 +0100
+Processing by FortunesController#index as HTML
+  [1m[36mFortune Load (42.9ms)[0m  [1mSELECT "fortunes".* FROM "fortunes" [0m
+  Rendered fortunes/index.html.erb within layouts/application (785.7ms)
+Compiled bootstrap_and_overrides.css  (4745ms)  (pid 6853)
+Compiled fortunes.css  (5ms)  (pid 6853)
+Compiled scaffolds.css  (6ms)  (pid 6853)
+Compiled application.css  (7539ms)  (pid 6853)
+Compiled jquery.js  (42ms)  (pid 6853)
+Compiled jquery_ujs.js  (39ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-transition.js  (2ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-alert.js  (2ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (160ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (2ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-tab.js  (2ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (40ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-button.js  (40ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (3ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (4ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (152ms)  (pid 6853)
+Compiled twitter/bootstrap/bootstrap-affix.js  (4ms)  (pid 6853)
+Compiled twitter/bootstrap.js  (14266ms)  (pid 6853)
+Compiled bootstrap.js  (244ms)  (pid 6853)
+Compiled fortunes.js  (61ms)  (pid 6853)
+Compiled application.js  (18945ms)  (pid 6853)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 36237ms (Views: 35454.4ms | ActiveRecord: 166.6ms)
+
+
+Started GET "/" for 153.19.5.40 at 2012-11-12 11:18:01 +0100
+Processing by FortunesController#index as HTML
+  [1m[35mFortune Load (90.2ms)[0m  SELECT "fortunes".* FROM "fortunes" 
+  Rendered fortunes/index.html.erb within layouts/application (8.6ms)
+  Rendered shared/_navbar.html.erb (0.1ms)
+Completed 200 OK in 472ms (Views: 380.9ms | ActiveRecord: 90.2ms)
