@@ -1,6 +1,6 @@
 <%- model_class = Fortune -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+  <h1>Everyones questions</h1>
 </div>
 <table class="table table-striped">
   <thead>
@@ -8,7 +8,7 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:quotation) %></th>
       <th><%= model_class.human_attribute_name(:source) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%= model_class.human_attribute_name(:data) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -18,7 +18,7 @@
         <td><%= link_to fortune.id, fortune_path(fortune) %></td>
         <td><%= fortune.quotation %></td>
         <td><%= fortune.source %></td>
-        <td><%=l fortune.created_at %></td>
+        <td><%= fortune.data %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_fortune_path(fortune), :class => 'btn btn-mini' %>
@@ -36,3 +36,10 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_fortune_path,
             :class => 'btn btn-primary' %>
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @fortunes %>
+  </div>
+  <%= will_paginate @fortunes, :container => false %>
+</div>

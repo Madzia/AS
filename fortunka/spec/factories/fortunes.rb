@@ -4,5 +4,6 @@ FactoryGirl.define do
   factory :fortune do
     quotation "MyText"
     source "MyString"
+    data "2012-12-03"
   end
 end
