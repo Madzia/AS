@@ -12,7 +12,7 @@
  <%= current_user.name %>
   <%= link_to "Sign Out from Github", signout_path %>
 <% else %>
-  <%= link_to image_tag("http://blog.eogn.com/.a/6a00d8341c767353ef016762f7c808970b-800wi", :size => "40x40", :border => 2, :alt => "rss feed"), "http://sigma.ug.edu.pl:16012/auth/github"  %>
+  <%= link_to image_tag("http://blog.eogn.com/.a/6a00d8341c767353ef016762f7c808970b-800wi", :size => "40x40", :border => 2, :alt => "rss feed"), "/auth/github"  %>
 <% end %>
 
 </li>
