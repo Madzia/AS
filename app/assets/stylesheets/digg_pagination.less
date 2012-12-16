@@ -1,0 +1,72 @@
+.digg_pagination {
+  margin: 1em 0 2em;
+  margin-left: 45%;
+  background: white;
+  cursor: default;
+
+  a, span, em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px;
+  }
+
+  .disabled {
+    color: #999999;
+    border: 1px solid #dddddd;
+  }
+
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    background: gray;
+    color: white;
+    border: 1px solid gray;
+  }
+
+  a {
+    text-decoration: none;
+    color: #d8d6dc;
+    border: 1px solid #d8d6cd;
+
+    &:hover, &:focus {
+      color: #000033;
+      border-color: #000033;
+    }
+
+  }
+
+  .page_info {
+    background: gray;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: .25em;
+    margin-left: -4em;
+    text-align: center;
+
+    b {
+      color: #000033;
+      background: #d8d6cd;
+      padding: 0.1em 0.25em;
+    }
+  }
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+}
+
+
+* html .digg_pagination {
+    height: 1%;
+}
+
+*:first-child + html .digg_pagination {
+    overflow: hidden;
+}

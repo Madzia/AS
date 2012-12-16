@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: fortunes_i18n_development
+  pool: 5
+  username: msarzynska
+  password: 194928
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: fortunes_i18n_production
+  pool: 5
+  username: msarzynska
+  password: 194928
